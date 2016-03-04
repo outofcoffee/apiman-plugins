@@ -4,7 +4,7 @@
 
   <groupId>io.apiman.plugins</groupId>
   <artifactId>apiman-plugins</artifactId>
-  <version>1.2.3-SNAPSHOT</version>
+  <version>1.2.1.Final</version>
   <name>apiman-plugins</name>
   <packaging>pom</packaging>
 
@@ -237,17 +237,6 @@
   </dependencyManagement>
 
   <modules>
-    <module>cors-policy</module>
-    <module>config-policy</module>
-    <module>http-security-policy</module>
-    <module>jsonp-policy</module>
-    <module>keycloak-oauth-policy</module>
-    <module>noop-policy</module>
-    <module>simple-header-policy</module>
-    <module>soap-authorization-policy</module>
-    <module>test-policy</module>
-    <module>transformation-policy</module>
-    <module>log-policy</module>
     <module>url-whitelist-policy</module>
   </modules>
 
