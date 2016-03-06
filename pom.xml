@@ -237,6 +237,18 @@
   </dependencyManagement>
 
   <modules>
+    <module>cors-policy</module>
+    <module>config-policy</module>
+    <module>http-security-policy</module>
+    <module>jsonp-policy</module>
+    <module>keycloak-oauth-policy</module>
+    <module>noop-policy</module>
+    <module>simple-header-policy</module>
+    <module>soap-authorization-policy</module>
+    <module>test-policy</module>
+    <module>transformation-policy</module>
+    <module>log-policy</module>
+    <module>unique-header-policy</module>
     <module>url-whitelist-policy</module>
   </modules>
 
