@@ -17,11 +17,7 @@ import java.util.UUID;
  * @author Pete Cornish {@literal <outofcoffee@gmail.com>}
  */
 public class UniqueHeaderPolicy extends AbstractMappedPolicy<UniqueHeaderBean> {
-    private final Messages messages;
-
-    public UniqueHeaderPolicy() {
-        messages = Messages.getMessageBundle(UniqueHeaderPolicy.class);
-    }
+    private static final Messages MESSAGES = new Messages("io.apiman.plugins.uniqueheader", "UniqueHeaderPolicy");
 
     /**
      * @see io.apiman.gateway.engine.policies.AbstractMappedPolicy#getConfigurationClass()
@@ -40,7 +36,7 @@ public class UniqueHeaderPolicy extends AbstractMappedPolicy<UniqueHeaderBean> {
 
         // validate configuration
         if (StringUtils.isBlank(config.getHeaderName())) {
-            throw new ConfigurationParseException(messages.format("Error.BlankHeaderName"));
+            throw new ConfigurationParseException(MESSAGES.format("Error.BlankHeaderName"));
         }
 
         return config;
